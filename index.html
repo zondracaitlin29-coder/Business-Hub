@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="Inbox Aide SA">
+<meta name="apple-mobile-web-app-title" content="Zondra's Hub">
 <meta name="theme-color" content="#f5f0eb">
-<title>Inbox Aide SA — Business Hub</title>
+<title>Zondra's Digital Business Hub</title>
 <link rel="manifest" id="pwa-manifest">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap');
@@ -172,9 +172,9 @@
 
   <div class="hdr">
     <div class="logo-box">
-      <img id="logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='url(%23grad)'/%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23d4754a;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%237a9178;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M96 48c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm0 80c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm16-32c0 8.8-7.2 16-16 16s-16-7.2-16-16 7.2-16 16-16 16 7.2 16 16z' fill='%23fff'/%3E%3Cpath d='M96 30c-36.3 0-66 29.7-66 66s29.7 66 66 66 66-29.7 66-66-29.7-66-66-66zm0 120c-29.8 0-54-24.2-54-54s24.2-54 54-54 54 24.2 54 54-24.2 54-54 54z' fill='%23fff' opacity='0.3'/%3E%3C/svg%3E" alt="Inbox Aide SA">
+      <img id="logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='url(%23grad)'/%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23d4754a;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%237a9178;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M96 48c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm0 80c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm16-32c0 8.8-7.2 16-16 16s-16-7.2-16-16 7.2-16 16-16 16 7.2 16 16z' fill='%23fff'/%3E%3Cpath d='M96 30c-36.3 0-66 29.7-66 66s29.7 66 66 66 66-29.7 66-66-29.7-66-66-66zm0 120c-29.8 0-54-24.2-54-54s24.2-54 54-54 54 24.2 54 54-24.2 54-54 54z' fill='%23fff' opacity='0.3'/%3E%3C/svg%3E" alt="Zondra's Digital Business Hub">
     </div>
-    <h1 class="hdr-title">Inbox Aide SA</h1>
+    <h1 class="hdr-title">Zondra's Digital</h1>
     <p class="hdr-sub">Business Hub</p>
     <div class="divider"></div>
   </div>
@@ -202,11 +202,11 @@ function getProducts() {
   const products = JSON.parse(localStorage.getItem("ia_products") || "[]");
   if (products.length === 0) {
     const defaults = [
-      { id: 1, name: "Content Audit", emoji: "📋", price: "Free", type: "free", replyTemplate: "Thank you for choosing Inbox Aide SA! 📋\n\nYour free Content Audit is ready to download. I've reviewed your inbox workflow and put together actionable insights.\n\nLet's get your inbox running smoothly! 🚀" },
+      { id: 1, name: "Content Audit", emoji: "📋", price: "Free", type: "free", replyTemplate: "Thank you for choosing Zondra's Digital Business Hub! 📋\n\nYour free Content Audit is ready to download. I've reviewed your inbox workflow and put together actionable insights.\n\nLet's get your inbox running smoothly! 🚀" },
       { id: 2, name: "CV Guide", emoji: "🎯", price: "R50", type: "guide", downloadLink: "https://selar.com/cv-guide", replyTemplate: "Thank you for purchasing the CV Guide! 🎯\n\nYou can access your download immediately right here:\n{link}" },
       { id: 3, name: "Baby Guide", emoji: "👶", price: "R80", type: "guide", downloadLink: "https://selar.com/baby-guide", replyTemplate: "Thank you for purchasing the Nurturing Little Eaters Guide! 👶🌿\n\nAccess your download here:\n{link}" },
       { id: 4, name: "Reply Vault", emoji: "📲", price: "R120", type: "app", tutorial: "Save to home screen for quick access", replyTemplate: "Thank you for purchasing The Reply Vault! 📲\n\nYour templates are ready. Access here: https://selar.co/reply-vault\n\nSave to home screen!" },
-      { id: 5, name: "Inbox Management", emoji: "📥", price: "R450/week", type: "service", agreement: "", replyTemplate: "Thank you for choosing Inbox Aide SA! 📥\n\nI manage your inbox week-to-week with no long contracts.\n\nReady to jump in and give you your time back! 🚀" }
+      { id: 5, name: "Inbox Management", emoji: "📥", price: "R450/week", type: "service", agreement: "", replyTemplate: "Thank you for choosing Zondra's Digital Business Hub! 📥\n\nI manage your inbox week-to-week with no long contracts.\n\nReady to jump in and give you your time back! 🚀" }
     ];
     localStorage.setItem("ia_products", JSON.stringify(defaults));
     return defaults;
@@ -735,17 +735,17 @@ self.addEventListener("fetch", e => {
 
 // ── PWA MANIFEST ────────────────────────────────────────────────
 const manifest = {
-  name: "Inbox Aide SA Business Hub",
-  short_name: "Inbox Aide SA",
-  description: "Quick-Reply Vault — reply fast, copy & go",
+  name: "Zondra's Digital Business Hub",
+  short_name: "Zondra's Hub",
+  description: "Zondra's Digital Business Hub — manage products, replies, and banking info",
   start_url: ".",
   display: "standalone",
   orientation: "portrait",
   background_color: "#f5f0eb",
-  theme_color: "#f5f0eb",
+  theme_color: "#d4754a",
   icons: [
-    { src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==", sizes: "192x192", type: "image/png", purpose: "any maskable" },
-    { src: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==", sizes: "512x512", type: "image/png", purpose: "any maskable" }
+    { src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='url(%23grad)'/%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23d4754a;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%237a9178;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M96 48c-26.5 0-48 21.5-48 48s21.5 48 48 48 48-21.5 48-48-21.5-48-48-48zm0 80c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm16-32c0 8.8-7.2 16-16 16s-16-7.2-16-16 7.2-16 16-16 16 7.2 16 16z' fill='%23fff'/%3E%3Cpath d='M96 30c-36.3 0-66 29.7-66 66s29.7 66 66 66 66-29.7 66-66-29.7-66-66-66zm0 120c-29.8 0-54-24.2-54-54s24.2-54 54-54 54 24.2 54 54-24.2 54-54 54z' fill='%23fff' opacity='0.3'/%3E%3C/svg%3E", sizes: "192x192", type: "image/svg+xml", purpose: "any" },
+    { src: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='107' fill='url(%23grad)'/%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23d4754a;stop-opacity:1'/%3E%3Cstop offset='100%25' style='stop-color:%237a9178;stop-opacity:1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M256 128c-70.7 0-128 57.3-128 128s57.3 128 128 128 128-57.3 128-128-57.3-128-128-128zm0 213c-47.1 0-85-37.9-85-85s37.9-85 85-85 85 37.9 85 85-37.9 85-85 85zm42-85c0 23.2-18.8 42-42 42s-42-18.8-42-42 18.8-42 42-42 42 18.8 42 42z' fill='%23fff'/%3E%3Cpath d='M256 80c-96.8 0-176 79.2-176 176s79.2 176 176 176 176-79.2 176-176-79.2-176-176-176zm0 320c-79.5 0-144-64.5-144-144s64.5-144 144-144 144 64.5 144 144-64.5 144-144 144z' fill='%23fff' opacity='0.3'/%3E%3C/svg%3E", sizes: "512x512", type: "image/svg+xml", purpose: "any" }
   ]
 };
 const manifestBlob = new Blob([JSON.stringify(manifest)], {type: "application/json"});
